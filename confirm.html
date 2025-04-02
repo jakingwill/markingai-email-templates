@@ -1,1 +1,116 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Confirm your email</title> <style>   body {     font-family: 'Arial', sans-serif;     margin: 0;     padding: 0;     background-color: #f4f4f4;   }    .email-container {     max-width: 600px;     margin: 40px auto;     background: #ffffff;     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);     border-radius: 8px;     overflow: hidden;     font-size: 16px;   }    .header {     background: #ffffff;     padding: 20px;     display: flex;     justify-content: space-between;     align-items: center;     border-bottom: 1px solid #cccccc;   }    .header img {     height: 40px;   }    .heading {     padding: 20px 30px;     background: #ffffff;     text-align: left;   }    .heading h2 {     color: #333;     margin: 0;     font-size: 24px;   }    .content-box {     background-color: #f7f7f7;     border-radius: 8px;     padding: 20px;     margin: 0 30px 20px;   }    .main-content p {     color: #555;     margin: 0 0 20px;   }    .button {     display: inline-block;     padding: 10px 20px;     background-color: #4285F4;     color: #ffffff;     border-radius: 5px;     text-decoration: none;     font-weight: bold;     margin-bottom: 20px;     text-align: center;   }    .footer {     background: #f9f9f9;     padding: 20px;     text-align: center;     font-size: 12px;     color: #555;   }    .footer a {     color: #4285F4;     text-decoration: none;   } </style> </head> <body>   <div class="email-container">     <div class="header">       <img src="https://assets-global.website-files.com/63f62022a64792517f257ec0/644a70e7e6ee991476a11741_markingai_logo_primary-p-500.png" alt="Marking.ai Logo">     </div>      <div class="heading">       <h2>Confirm your email to get started</h2>     </div>      <div class="content-box">       <div class="main-content">         <p>Hi there,</p>         <p>Thanks for signing up to Marking.ai! To finish creating your account and start using the platform, please confirm your email address below:</p>         <a href="{{ .ConfirmationURL }}" class="button" target="_blank">Confirm your email</a>         <p>If you didn’t sign up, you can safely ignore this email.</p>               </div>     </div>      <div class="footer">       <p>Need help? <a href="https://www.marking.ai/contact-us">Contact us</a>.</p>       <p>© 2025 Marking.ai. All rights reserved.</p>     </div>   </div> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm your email</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 16px;
+    }
+
+    .header {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    .header img {
+      height: 40px;
+    }
+
+    .heading {
+      padding: 20px 30px;
+      background: #ffffff;
+      text-align: left;
+    }
+
+    .heading h2 {
+      color: #333;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .content-box {
+      background-color: #f7f7f7;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 0 30px 20px;
+    }
+
+    .main-content p {
+      color: #555;
+      margin: 0 0 20px;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #4285F4;
+      color: #ffffff !important;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .footer a {
+      color: #4285F4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <img src="https://assets-global.website-files.com/63f62022a64792517f257ec0/644a70e7e6ee991476a11741_markingai_logo_primary-p-500.png" alt="Marking.ai Logo">
+    </div>
+
+    <div class="heading">
+      <h2>Confirm your email to get started</h2>
+    </div>
+
+    <div class="content-box">
+      <div class="main-content">
+        <p>Hi there,</p>
+        <p>Thanks for signing up to Marking.ai! To finish creating your account and start using the platform, please confirm your email address below:</p>
+        <div class="button-container">
+          <a href="{{ .ConfirmationURL }}" class="button" target="_blank">Confirm your email</a>
+        </div>
+        <p>If you didn’t sign up, you can safely ignore this email.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Need help? <a href="https://www.marking.ai/contact-us">Contact us</a>.</p>
+      <p>© 2025 Marking.ai. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
