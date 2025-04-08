@@ -98,7 +98,9 @@
       <div class="main-content">
         <p>Hi there,</p>
         <p>You recently requested to reset your password. Click below to proceed:</p>
-        <a href="{{ .ConfirmationURL }}" target="_blank">Reset password</a>
+        <a href="https://get.marking.ai/change-password?token={{ .Token }}&type=recovery&email={{ .Email }}">
+  Reset your password
+</a>
         <p>This link will expire in 1 hour. If you didn’t request this, just ignore this email.</p>
       </div>
     </div>
